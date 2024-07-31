@@ -9,12 +9,12 @@
     <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 
-
+<!--navbar-->
 <main class="container">
   <nav class="navbar bg-body-tertiary">
       <div class="container-fluid">
           <a class="navbar-brand" href="#">
-            <i class="fa-brands fa-instagram"></i>Instagram </a>
+            <i class="fa-brands fa-instagram p-1 m-1"></i>Instagram </a>
                 <div class="float-end">
                   <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal"> 
                     Create a new Post 
@@ -62,16 +62,92 @@
   </div>
 </div>
 
-    <div class="nav justify-content-center">
-        <ul class="nav nav-tabs">
-         <li class="nav-item">
-           <a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-table-cells"></i></a>
-         </li>
-         <li class="nav-item">
-           <a class="nav-link" href="#"><i class="fa-solid fa-square" ;"></i></i></a>
-         </li>
-        </ul>
-     </div>
+
+<!--iconos centrales-->
+<div class="nav justify-content-center p-2">
+  <ul class="nav nav-tabs" id="mytab" role="tablist" >
+      <li class="nav-item" >
+           <a class="nav-link active" aria-current="page" id="home-tab" data-bs-target="#home"type="button" role="tab"><i class="fa-solid fa-table-cells"></i></a>
+      </li>
+      <li class="nav-item" role="presentation">
+           <a class="nav-link" type="button" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile"><i class="fa-solid fa-square" ;></i></i></a>
+      </li>
+  </ul>
+</div>
+
+<!--grid-->
+<div class="tab-content" id="mytab">
+
+  <div class="tab-pane fade show active overflow-hidden" id="home" role="tabpanel" aria-labelledby="home-tab">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="container-fluid p-1 ">
+          <img style="height: 30vw;;"src="/assets/img/S-worksazul.jpg" class="card-img-top" alt="...">
+          <img style="height: 30vw;"src="/assets/img/Bianchi.jpg" class="card-img-top" alt="...">
+          <img style="height: 30vw;"src="/assets/img/canyon.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+      </div>
+    </div>
+  </div>
+
+  <div class="col">
+    <div class="container-fluid p-1">
+      <img style="height: 30vw;"src="/assets/img/Giant Propel Advanced SL 0 Disc @racefietsblog_nl.jpg" class="card-img-top" alt="...">
+      <img style="height: 30vw;"src="/assets/img/Madone SL 7 _ Trek Bikes.jpg" class="card-img-top" alt="...">
+      <img style="height: 30vw;"src="/assets/img/Madone SLR 6 AXS Gen 7 - Trek Bikes (DE).jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+      </div>
+    </div>
+  </div>
+
+  <div class="col">
+    <div class="container-fluid p-2 ">
+      <img style="height: 30vw;"src="/assets/img/pinarello.jpg" class="card-img-top" alt="...">
+      <img style="height: 30vw;"src="/assets/img/s-works.jpg" class="card-img-top" alt="...">
+      <img style="height: 30vw;"src="/assets/img/trek.jpg" class="card-img-top" alt="..."> 
+      <div class="card-body">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--1 columna-->
+<div class="tab-pane " id="home" role="tabpanel" aria-labelledby="profile-tab">
+
+  <div class="card w-50 mx-auto border rounded p-0">
+    <div class="card-body">
+      <h5 class="card-title">Specialized S-works</h5>
+      <img src="/assets/img/S-worksazul.jpg" class="img-fluid w-70 alt=">
+      <h6>350 Likes</h6>
+      <p>Specialized es una marca estadounidense de bicicletas de alta gama, conocida por su innovación y calidad. Fundada en 1974, ofrece modelos destacados como la Tarmac y la Stumpjumper, utilizadas en competiciones de ciclismo de carretera y montaña.</p>
+    </div>
+  </div>
+  
+  <div class="card w-50 mx-auto border rounded p-0">
+    <div class="card-body">
+      <h5 class="card-title">Pinarello</h5>
+      <small>06/10</small>
+      <img src="/assets/img/pinarello.jpg" class="img-fluid w-70 alt=">
+      <h6>300 Likes</h6>
+      <p>Pinarello es una marca italiana de bicicletas de alta gama, famosa por sus innovadores diseños y su uso de materiales como la fibra de carbono. Fundada en 1952, sus modelos como la Dogma son muy apreciados en el ciclismo profesional y han ganado múltiples títulos en el Tour de Francia.</p>
+    </div>
+  </div>
+
+  <div class="card w-50 mx-auto border rounded p-0">
+    <div class="card-body">
+      <div class="d-flex">
+        <h5 class="card-title">Canyon</h5> 
+        <small>06/10</small>
+      </div>
+      <img src="/assets/img/canyon.jpg" class="img-fluid w-70 alt=">
+      <h6>550 Likes</h6>
+      <p>Canyon es una marca alemana de bicicletas de alta gama, reconocida por su diseño directo al consumidor y su innovación tecnológica. Fundada en 2002, ofrece modelos populares como la Ultimate y la Strive, utilizados tanto en ciclismo de carretera como de montaña.</p>
+    </div>
+  </div>
+
+</div>
+
+
 </main>
 
 
